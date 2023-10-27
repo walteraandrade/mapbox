@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        marker: `url(src/assets/mapbox-marker-icon-blue.svg)`,
+      },
+    },
   },
   plugins: [],
 }
