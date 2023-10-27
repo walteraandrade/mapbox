@@ -51,8 +51,8 @@ const geojson2 = {
 export type Geojson = typeof geojson1
 const geojsons = [geojson1, geojson2]
 
+const apiKey = import.meta.env.GOOGLE_MAPS_API_KEY
 const libraries: Libraries = ["places"]
-const apiKey = "AIzaSyBQ1Y8mkKLNGjNadg30_ctfHWHIDVfkimc"
 function App() {
   const [selectedPlace, setSelectedPlace] = React.useState<string>("")
   const { isLoaded, url } = useLoadScript({
