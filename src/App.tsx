@@ -1,7 +1,5 @@
 import { Libraries, useLoadScript } from "@react-google-maps/api"
 import * as React from "react"
-// import { Geojson, geojsons } from "./components/map/fake-data"
-// import Control from "./components/controls"
 import { ClickEventHandler } from "./hooks/google-maps-event-handler"
 import GoogleMapComponent from "./components/map/gmap.component"
 import GooglePlacesComponent from "./components/map/google-places"

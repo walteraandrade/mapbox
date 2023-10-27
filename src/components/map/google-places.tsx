@@ -12,6 +12,9 @@ interface GooglePlacesComponent {
 const GooglePlacesComponent: React.FC<GooglePlacesComponent> = ({
   placeId,
   apiKey,
+}: {
+  placeId: string
+  apiKey: string
 }) => {
   return (
     <>

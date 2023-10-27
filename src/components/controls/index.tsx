@@ -1,12 +1,18 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ChangeEvent } from "react"
 
 interface ControlProps {
   addMarker: (event: ChangeEvent<HTMLSelectElement>) => void
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   saveData?: (data: any) => void
 }
 
-const Control: React.FC<ControlProps> = ({ addMarker, saveData }) => {
+const Control: React.FC<ControlProps> = ({
+  addMarker,
+  saveData,
+}: {
+  addMarker: (event: ChangeEvent<HTMLSelectElement>) => void
+  saveData?: (data: any) => void
+}) => {
   return (
     <>
       <div className="flex justify-center w-full">
